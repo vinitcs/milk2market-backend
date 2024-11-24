@@ -7,14 +7,14 @@ const adminSchema = Schema(
     adminName: {
       type: String,
       required: [true, "Please enter user name"],
-      unique: [true, "Name already exist!!!"],
+      unique: [true, "Admin name already exist!!!"],
       lowercase: true,
       trim: true,
     },
     adminEmail: {
       type: String,
       required: [true, "Please enter admin email"],
-      unique: [true, "Email already exist!!!"],
+      unique: [true, "Admin email already exist!!!"],
       lowercase: true,
       trim: true,
     },

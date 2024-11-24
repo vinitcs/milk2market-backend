@@ -25,7 +25,11 @@ const productSchema = new Schema(
       type: String,
       required: [true, "Please enter the product item description"],
       trim: true,
-    }, 
+    },
+    popular: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,

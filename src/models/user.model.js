@@ -15,14 +15,14 @@ const userSchema = new Schema(
     userEmail: {
       type: String,
       required: [true, "Please enter user email"],
-      unique: [true, "Email already exist!!!"],
+      unique: [true, "User email already exist!!!"],
       lowercase: true,
       trim: true,
     },
     userPhone: {
       type: String,
       required: [true, "Please enter phone"],
-      unique: [true, "Phone already exist!!!"],
+      unique: [true, "User phone already exist!!!"],
       trim: true,
     },
     userPassword: {
